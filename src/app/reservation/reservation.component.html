@@ -1,0 +1,51 @@
+<form [formGroup]="reservationForm" (ngSubmit)="submitForm()">
+  <label for="name">Nombre:</label>
+  <input type="text" formControlName="name" id="name">
+  <br>
+  <label for="hotel">Hotel:</label>
+  <select formControlName="hotel" id="hotel">
+    <option *ngFor="let parador of paradores" [value]="parador.id">{{ parador.name }}</option>
+  </select>
+  <br>
+  <label for="checkInDate">Fecha de entrada:</label>
+  <input type="date" formControlName="checkInDate" id="checkInDate">
+  <br>
+  <label for="checkOutDate">Fecha de salida:</label>
+  <input type="date" formControlName="checkOutDate" id="checkOutDate">
+  <br>
+  <button type="submit">Reservar</button>
+</form>
+<form [formGroup]="reservationForm" (ngSubmit)="submitForm()">
+  <label for="name">Nombre:</label>
+  <input type="text" formControlName="name" id="name">
+  <br>
+  <label for="hotel">Hotel:</label>
+  <select formControlName="hotel" id="hotel">
+    <option *ngFor="let parador of paradores" [value]="parador.id">{{ parador.name }}</option>
+  </select>
+  <br>
+  <label for="checkInDate">Fecha de entrada:</label>
+  <input type="date" formControlName="checkInDate" id="checkInDate">
+  <br>
+  <label for="checkOutDate">Fecha de salida:</label>
+  <input type="date" formControlName="checkOutDate" id="checkOutDate">
+  <br>
+  <button type="submit">Reservar</button>
+</form>
+<form [formGroup]="reservationForm" (ngSubmit)="submitForm()">
+  <label for="name">Nombre:</label>
+  <input type="text" formControlName="name" id="name">
+  <br>
+  <label for="hotel">Hotel:</label>
+  <select formControlName="hotel" id="hotel">
+    <option *ngFor="let parador of paradores" [value]="parador.id">{{ parador.name }}</option>
+  </select>
+  <br>
+  <label for="checkInDate">Fecha de entrada:</label>
+  <input type="date" formControlName="checkInDate" id="checkInDate">
+  <br>
+  <label for="checkOutDate">Fecha de salida:</label>
+  <input type="date" formControlName="checkOutDate" id="checkOutDate">
+  <br>
+  <button type="submit">Reservar</button>
+</form>
